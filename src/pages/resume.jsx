@@ -5,7 +5,6 @@ import oauth01 from "../assets/resume/oauth-01.png";
 import tool01 from "../assets/resume/tool-01.jpg";
 import blocks01 from "../assets/resume/blocks-01.jpg";
 import tasks01 from "../assets/resume/tasks-01.gif";
-import nextme from "../assets/resume/nextme.gif";
 import JSEmbed01 from "../assets/resume/JS-embed-01.mp4";
 
 // https://emojipedia.org/party-popper/
@@ -56,7 +55,7 @@ export const Resume = () => {
           <h3 className="w-full bg-gradient-to-b from-gray-900 to-gray-600 bg-gradient-to-r text-white pl-3 rounded-tl-xl rounded-tr-xl">
             Education🏫
           </h3>
-          <p className="flex justify-between items-center">
+          <p className="flex justify-between items-center max-sm:flex-col max-sm:gap-2">
             <a
               href="https://www.163.com/dy/article/HKOS8HOG0552TYXN.html"
               target="_blank"
@@ -114,15 +113,13 @@ export const Resume = () => {
           <h3 className="w-full bg-gradient-to-b from-gray-900 to-gray-600 bg-gradient-to-r text-white pl-3 rounded-tl-xl rounded-tr-xl">
             Projects❤️
           </h3>
-          <div className="text-sm">
-            <h4>Nextme</h4>
-            <img
-              src={nextme}
-              alt="gif"
-              className="border-2 border-slate-300 rounded-xl"
-            />
-
-            <h5>Experience</h5>
+          <div className="text-sm border-b-slate-100 border-b-2">
+            <h4>
+              <a href="https://nextme.one" target="_blank">
+                Nextme
+              </a>
+              <h5 className="font-bold">Experience</h5>
+            </h4>
             <ul>
               <li>
                 Serverless Infra
@@ -176,6 +173,22 @@ export const Resume = () => {
                     </ul>
                   </li>
                 </ul>
+              </li>
+            </ul>
+          </div>
+          <div className="text-sm border-b-slate-100 border-b-2">
+            <h4>
+              <a href="https://github.com/Dapp-Learning-DAO/Dapp-Learning">
+                Dapp Learning
+              </a>
+              <h5 className="font-bold">Experience</h5>
+            </h4>
+            <ul>
+              <li>One of the builder group</li>
+              <li>
+                <a href="https://github.com/Dapp-Learning-DAO/Dapp-Learning/tree/main/basic">
+                  Translation: basic06~11
+                </a>
               </li>
             </ul>
           </div>
