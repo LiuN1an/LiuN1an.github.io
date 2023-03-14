@@ -103,6 +103,11 @@ export const Resume = () => {
                   responsible for supporting the configuration of event
                   data and runtime data flow within the platform.
                 </li>
+                <li>
+                  As the architecture lead for the design tool, I am
+                  responsible for the interconnection of data across
+                  multiple panels within the tool.
+                </li>
               </ul>
             </div>
           </div>
