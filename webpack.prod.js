@@ -25,11 +25,13 @@ module.exports = {
     rules: [
       {
         test: /\.(jpe?g|png|gif)$/i,
+        include: path.resolve(__dirname, "src/assets"),
         use: [
           {
             loader: "file-loader",
             options: {
-              publicPath: "assets",
+              name: "[name].[ext]",
+              outputPath: "assets/",
             },
           },
         ],
