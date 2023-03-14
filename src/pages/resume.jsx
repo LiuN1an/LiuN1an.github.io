@@ -10,13 +10,35 @@ import JSEmbed01 from "../assets/resume/JS-embed-01.mp4";
 // https://emojipedia.org/party-popper/
 // https://github.com/Hubery-Lee/Notes/blob/master/%E5%A6%82%E4%BD%95%E5%9C%A8github%E4%B8%8A%E5%86%99%E5%87%BA%E6%BC%82%E4%BA%AE%E7%9A%84readme.md.md
 
+function copyToClipboard(text) {
+  // 创建一个临时的 textarea 元素
+  const tempTextArea = document.createElement("textarea");
+
+  // 设置文本内容
+  tempTextArea.value = text;
+
+  // 将 textarea 元素添加到文档中
+  document.body.appendChild(tempTextArea);
+
+  // 选中文本
+  tempTextArea.select();
+
+  // 将文本复制到剪贴板
+  document.execCommand("copy");
+
+  // 删除 textarea 元素
+  document.body.removeChild(tempTextArea);
+}
+
 export const Resume = () => {
+  const [tip, setTip] = useState(false);
+
   return (
     <div className="min-h-screen bg-gray-50 py-8 flex flex-col  relative overflow-hidden">
       <div className="relative w-full py-12 px-6 bg-white shadow-xl shadow-slate-700/10 ring-1 ring-gray-900/5 md:max-w-3xl md:mx-auto lg:max-w-4xl lg:pb-28">
         <div className="prose mx-auto lg:prose-lg">
           <h2>Liunian</h2>
-          <p className="flex gap-4">
+          <p className="flex gap-6">
             <a
               href="https://github.com/LiuN1an"
               target="_blank"
@@ -51,6 +73,32 @@ export const Resume = () => {
                 />
               </svg>
             </a>
+            <div
+              className="tooltip hover:cursor-pointer"
+              data-tip="email"
+              onClick={() => {
+                copyToClipboard("liun1an2019hkw@gmail.com");
+                setTip(true);
+                setTimeout(() => setTip(false), 1000);
+              }}
+            >
+              <svg
+                t="1678825732956"
+                class="icon"
+                viewBox="0 0 1024 1024"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                p-id="3443"
+                width="24"
+                height="24"
+              >
+                <path
+                  d="M874.666667 181.333333H149.333333c-40.533333 0-74.666667 34.133333-74.666666 74.666667v512c0 40.533333 34.133333 74.666667 74.666666 74.666667h725.333334c40.533333 0 74.666667-34.133333 74.666666-74.666667V256c0-40.533333-34.133333-74.666667-74.666666-74.666667z m-725.333334 64h725.333334c6.4 0 10.666667 4.266667 10.666666 10.666667v25.6L512 516.266667l-373.333333-234.666667V256c0-6.4 4.266667-10.666667 10.666666-10.666667z m725.333334 533.333334H149.333333c-6.4 0-10.666667-4.266667-10.666666-10.666667V356.266667l356.266666 224c4.266667 4.266667 10.666667 4.266667 17.066667 4.266666s12.8-2.133333 17.066667-4.266666l356.266666-224V768c0 6.4-4.266667 10.666667-10.666666 10.666667z"
+                  fill="#d81e06"
+                  p-id="3444"
+                ></path>
+              </svg>
+            </div>
           </p>
           <h3 className="w-full bg-gradient-to-b from-gray-900 to-gray-600 bg-gradient-to-r text-white pl-3 rounded-tl-xl rounded-tr-xl">
             Education🏫
@@ -316,6 +364,29 @@ export const Resume = () => {
           </div>
 
           <h3></h3>
+        </div>
+      </div>
+
+      <div
+        className={`alert alert-success shadow-lg w-1/2 translate-x-1/2 opacity-0 duration-300 fixed bottom-0 ${
+          tip ? "bottom-2 opacity-100 " : ""
+        }`}
+      >
+        <div className="overflow-hidden whitespace-nowrap text-ellipsis flex">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="stroke-current flex-shrink-0 h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+            />
+          </svg>
+          <span className="text-xs">Your have Copy it!</span>
         </div>
       </div>
     </div>
