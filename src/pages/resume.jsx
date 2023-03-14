@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 
+// https://emojipedia.org/party-popper/
 export const Resume = () => {
   return (
     <div className="min-h-screen bg-gray-50 py-8 flex flex-col  relative overflow-hidden lg:py-12">
