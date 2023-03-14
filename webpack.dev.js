@@ -20,7 +20,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(jpe?g|png|gif)$/i,
+        test: /\.(jpe?g|png|gif|mp4)$/i,
         include: path.resolve(__dirname, "src/assets"),
         use: [
           {
@@ -76,6 +76,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/index.html",
       inject: "head",
+      favicon: "./src/assets/logo.ico",
       hash: false,
     }),
     new ReactRefreshWebpackPlugin(),

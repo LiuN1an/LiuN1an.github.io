@@ -3,6 +3,10 @@ import hccli01 from "../assets/resume/hc-cli-01.jpeg";
 import treemind01 from "../assets/resume/tree-mind-01.jpeg";
 import oauth01 from "../assets/resume/oauth-01.png";
 import tool01 from "../assets/resume/tool-01.jpg";
+import blocks01 from "../assets/resume/blocks-01.jpg";
+import tasks01 from "../assets/resume/tasks-01.gif";
+import nextme from "../assets/resume/nextme.gif";
+import JSEmbed01 from "../assets/resume/JS-embed-01.mp4";
 
 // https://emojipedia.org/party-popper/
 // https://github.com/Hubery-Lee/Notes/blob/master/%E5%A6%82%E4%BD%95%E5%9C%A8github%E4%B8%8A%E5%86%99%E5%87%BA%E6%BC%82%E4%BA%AE%E7%9A%84readme.md.md
@@ -50,7 +54,7 @@ export const Resume = () => {
             </a>
           </p>
           <h3 className="w-full bg-gradient-to-b from-gray-900 to-gray-600 bg-gradient-to-r text-white pl-3 rounded-tl-xl rounded-tr-xl">
-            Education
+            Education🏫
           </h3>
           <p className="flex justify-between items-center">
             <a
@@ -59,32 +63,135 @@ export const Resume = () => {
               className="tooltip"
               data-tip="下沙小清华,落寞的世界名校"
             >
-              杭电
+              HangZhouDianZi
             </a>
-            <span>本硕, 于2021年正式毕业</span>
+            <span className="text-sm">
+              Master's degree, graduated in 2021
+            </span>
+          </p>
+          <p className="text-xs">
+            Have an academic background in deep learning and neural
+            networks, and my research focuses on the combination of tensors
+            and recurrent neural networks. Published a paper in a SCI Q2
+            journal.
           </p>
           <h3 className="w-full bg-gradient-to-b from-gray-900 to-gray-600 bg-gradient-to-r text-white pl-3 rounded-tl-xl rounded-tr-xl">
-            Jobs
+            Jobs💡
           </h3>
-          <p></p>
-
+          <div className="text-sm">
+            <div className="flex gap-2 items-center">
+              <h4>ByteDance</h4>
+            </div>
+            <div className="text-sm">
+              <h5 className="font-bold">Zero Code Platform</h5>
+              <ul>
+                <li>
+                  As the mobile lead, I am responsible for all the mobile
+                  interactions of the components as well as the integration
+                  with the open platform.
+                </li>
+              </ul>
+              <h5 className="font-bold">Low Code Platform</h5>
+              <ul>
+                <li>
+                  Have experience leading a team and have led a team of
+                  five employees in a platform-level form style redesign
+                  project.
+                </li>
+                <li>
+                  As the architecture lead for the event engine, I am
+                  responsible for supporting the configuration of event
+                  data and runtime data flow within the platform.
+                </li>
+              </ul>
+            </div>
+          </div>
           <h3 className="w-full bg-gradient-to-b from-gray-900 to-gray-600 bg-gradient-to-r text-white pl-3 rounded-tl-xl rounded-tr-xl">
-            Projects
+            Projects❤️
           </h3>
-          <div>
-            <h4>NextMe</h4>
+          <div className="text-sm">
+            <h4>Nextme</h4>
+            <img
+              src={nextme}
+              alt="gif"
+              className="border-2 border-slate-300 rounded-xl"
+            />
+
+            <h5>Experience</h5>
+            <ul>
+              <li>
+                Serverless Infra
+                <ul>
+                  <li>Vercel Config</li>
+                  <li>Data Proxy</li>
+                  <li>AWS Queue</li>
+                </ul>
+              </li>
+              <blockquote className="font-bold">
+                Achieve
+                <ul>
+                  <li>
+                    At peak, 30+ new users per minute, 10000+ new users per
+                    day
+                  </li>
+                  <li>
+                    The maximum database connection is 300+ with pool
+                  </li>
+                </ul>
+              </blockquote>
+              <li>
+                Frontend
+                <ul>
+                  <li>
+                    Infra like modal, dropdown, global state manager.
+                  </li>
+                  <li>All oauth ways</li>
+                  <li>
+                    Blocks
+                    <img
+                      src={blocks01}
+                      alt={"blocks"}
+                      className="border-2 border-slate-300 rounded-xl"
+                    />
+                    <ul>
+                      <li>Screenshot for URL in card</li>
+                      <li>Common form models that can be reused</li>
+                    </ul>
+                  </li>
+                  <li>
+                    Tasks
+                    <img
+                      src={tasks01}
+                      alt="task"
+                      className="border-2 border-slate-300 rounded-xl"
+                    />
+                    <ul>
+                      <li>Twitter & Discord auth</li>
+                      <li>Progress Recorder</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
           </div>
 
           <h3 className="w-full bg-gradient-to-b from-gray-900 to-gray-600 bg-gradient-to-r text-white pl-3 rounded-tl-xl rounded-tr-xl">
-            Plays
+            Plays🔥
           </h3>
-          <div className="grid gap-8 grid-cols-2 pt-8">
+          <div className="grid gap-8 grid-cols-2 pt-8 max-sm:grid-cols-1">
             <div className="card card-compact bg-base-100 shadow-xl hover:shadow-2xl duration-150">
               <figure style={{ marginBottom: 0, marginTop: 0 }}>
-                <img src={hccli01} alt="Prompt" className="w-full h-auto max-h-48 object-cover" />
+                <img
+                  src={hccli01}
+                  alt="Prompt"
+                  className="w-full h-auto max-h-48 object-cover"
+                />
               </figure>
               <div className="card-body">
-                <a target="_blank" href="https://github.com/LiuN1an/hc-cli">
+                <a
+                  target="_blank"
+                  href="https://github.com/LiuN1an/hc-cli"
+                >
                   hc-cli
                 </a>
                 <p>
@@ -96,10 +203,17 @@ export const Resume = () => {
 
             <div className="card card-compact bg-base-100 shadow-xl hover:shadow-2xl duration-150">
               <figure style={{ marginBottom: 0, marginTop: 0 }}>
-                <img src={treemind01} alt="Prompt" className="w-full h-auto max-h-48 object-cover" />
+                <img
+                  src={treemind01}
+                  alt="Prompt"
+                  className="w-full h-auto max-h-48 object-cover"
+                />
               </figure>
               <div className="card-body">
-                <a target="_blank" href="https://github.com/LiuN1an/tree-mind">
+                <a
+                  target="_blank"
+                  href="https://github.com/LiuN1an/tree-mind"
+                >
                   tree-mind
                 </a>
                 <p>
@@ -111,25 +225,36 @@ export const Resume = () => {
 
             <div className="card card-compact bg-base-100 shadow-xl hover:shadow-2xl duration-150">
               <figure style={{ marginBottom: 0, marginTop: 0 }}>
-                <img src={oauth01} alt="Prompt" className="w-full h-auto max-h-48 object-cover" />
+                <img
+                  src={oauth01}
+                  alt="Prompt"
+                  className="w-full h-auto max-h-48 object-cover"
+                />
               </figure>
               <div className="card-body">
                 <a target="_blank" href="https://github.com/LiuN1an/oauth">
                   oauth
                 </a>
                 <p>
-                  oauth is based on nextAuth, it provide a way to customize the
-                  content of state during the process of oauth.
+                  oauth is based on nextAuth, it provide a way to customize
+                  the content of state during the process of oauth.
                 </p>
               </div>
             </div>
 
             <div className="card card-compact bg-base-100 shadow-xl hover:shadow-2xl duration-150">
               <figure style={{ marginBottom: 0, marginTop: 0 }}>
-                <img src={tool01} alt="Prompt" className="w-full h-auto max-h-48 object-cover" />
+                <img
+                  src={tool01}
+                  alt="Prompt"
+                  className="w-full h-auto max-h-48 object-cover"
+                />
               </figure>
               <div className="card-body">
-                <a target="_blank" href="https://github.com/LiuN1an/Util-Tools">
+                <a
+                  target="_blank"
+                  href="https://github.com/LiuN1an/Util-Tools"
+                >
                   Util-Tools
                 </a>
                 <p>
@@ -137,6 +262,23 @@ export const Resume = () => {
                   projects, it contains many small tools or examples to
                   accelerate developing
                 </p>
+              </div>
+            </div>
+
+            <div className="card card-compact bg-base-100 shadow-xl hover:shadow-2xl duration-150">
+              <figure style={{ marginBottom: 0, marginTop: 0 }}>
+                <video autoplay>
+                  <source src={JSEmbed01} type="video/mp4" />
+                </video>
+              </figure>
+              <div className="card-body">
+                <a
+                  target="_blank"
+                  href="https://glidkz06tv.feishu.cn/docs/doccnDHmn13Jg9Si6hG8IseVrkg"
+                >
+                  JS Embedded Development
+                </a>
+                <p>An ancient original article</p>
               </div>
             </div>
           </div>
