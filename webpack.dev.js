@@ -20,6 +20,19 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.(jpe?g|png|gif)$/i,
+        include: path.resolve(__dirname, "src/assets"),
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "assets/",
+            },
+          },
+        ],
+      },
+      {
         test: /\.md$/,
         use: "raw-loader",
       },
@@ -46,7 +59,7 @@ module.exports = {
           "style-loader",
           { loader: "css-loader", options: { importLoaders: 1 } },
           {
-            loader: "postcss-loader", // postcss loader needed for tailwindcss
+            loader: "postcss-loader",
             options: {
               postcssOptions: {
                 ident: "postcss",

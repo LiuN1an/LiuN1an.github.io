@@ -1,4 +1,8 @@
 import React, { useEffect, useState } from "react";
+import hccli01 from "../assets/resume/hc-cli-01.jpeg";
+import treemind01 from "../assets/resume/tree-mind-01.jpeg";
+import oauth01 from "../assets/resume/oauth-01.png";
+import tool01 from "../assets/resume/tool-01.jpg";
 
 // https://emojipedia.org/party-popper/
 // https://github.com/Hubery-Lee/Notes/blob/master/%E5%A6%82%E4%BD%95%E5%9C%A8github%E4%B8%8A%E5%86%99%E5%87%BA%E6%BC%82%E4%BA%AE%E7%9A%84readme.md.md
@@ -6,8 +10,8 @@ import React, { useEffect, useState } from "react";
 export const Resume = () => {
   return (
     <div className="min-h-screen bg-gray-50 py-8 flex flex-col  relative overflow-hidden">
-      <div class="relative w-full py-12 px-6 bg-white shadow-xl shadow-slate-700/10 ring-1 ring-gray-900/5 md:max-w-3xl md:mx-auto lg:max-w-4xl lg:pb-28">
-        <div class="prose mx-auto lg:prose-lg">
+      <div className="relative w-full py-12 px-6 bg-white shadow-xl shadow-slate-700/10 ring-1 ring-gray-900/5 md:max-w-3xl md:mx-auto lg:max-w-4xl lg:pb-28">
+        <div className="prose mx-auto lg:prose-lg">
           <h2>Liunian</h2>
           <p className="flex gap-4">
             <a
@@ -45,7 +49,9 @@ export const Resume = () => {
               </svg>
             </a>
           </p>
-          <h3>Education</h3>
+          <h3 className="w-full bg-gradient-to-b from-gray-900 to-gray-600 bg-gradient-to-r text-white pl-3 rounded-tl-xl rounded-tr-xl">
+            Education
+          </h3>
           <p className="flex justify-between items-center">
             <a
               href="https://www.163.com/dy/article/HKOS8HOG0552TYXN.html"
@@ -57,48 +63,83 @@ export const Resume = () => {
             </a>
             <span>本硕, 于2021年正式毕业</span>
           </p>
-          <h3>Jobs</h3>
+          <h3 className="w-full bg-gradient-to-b from-gray-900 to-gray-600 bg-gradient-to-r text-white pl-3 rounded-tl-xl rounded-tr-xl">
+            Jobs
+          </h3>
           <p></p>
 
-          <h3>Projects</h3>
-          <p>
+          <h3 className="w-full bg-gradient-to-b from-gray-900 to-gray-600 bg-gradient-to-r text-white pl-3 rounded-tl-xl rounded-tr-xl">
+            Projects
+          </h3>
+          <div>
             <h4>NextMe</h4>
-          </p>
+          </div>
 
-          <h3>Plays</h3>
-          <p className="flex flex-col gap-6 border-b-slate-500 border-b-2 border-dashed">
-            <h4>
-              <a target="_blank" href="https://github.com/LiuN1an/hc-cli">
-                hc-cli
-              </a>
-            </h4>
-            <blockquote>
-              hc-cli is a small command tool to quickly build a react project.
-              It provides some templates.
-            </blockquote>
-          </p>
-          <p className="flex flex-col gap-6 border-b-slate-500 border-b-2 border-dashed">
-            <h4>
-              <a target="_blank" href="https://github.com/LiuN1an/oauth">
-                oauth
-              </a>
-            </h4>
-            <blockquote>
-              oauth is based on nextAuth, it provide a way to customize the
-              content of state during the process of oauth.
-            </blockquote>
-          </p>
-          <p className="flex flex-col gap-6 border-b-slate-500 border-b-2 border-dashed">
-            <h4>
-              <a target="_blank" href="https://github.com/LiuN1an/Util-Tools">
-                Util-Tools
-              </a>
-            </h4>
-            <blockquote>
-              Util-Tools is a private library which is used in common projects,
-              it contains many small tool or example to accelerate developing
-            </blockquote>
-          </p>
+          <h3 className="w-full bg-gradient-to-b from-gray-900 to-gray-600 bg-gradient-to-r text-white pl-3 rounded-tl-xl rounded-tr-xl">
+            Plays
+          </h3>
+          <div className="grid gap-8 grid-cols-2 pt-8">
+            <div className="card card-compact bg-base-100 shadow-xl hover:shadow-2xl duration-150">
+              <figure style={{ marginBottom: 0, marginTop: 0 }}>
+                <img src={hccli01} alt="Prompt" className="w-full h-auto max-h-48 object-cover" />
+              </figure>
+              <div className="card-body">
+                <a target="_blank" href="https://github.com/LiuN1an/hc-cli">
+                  hc-cli
+                </a>
+                <p>
+                  hc-cli is a small command tool to quickly build a react
+                  project. It provides some templates.
+                </p>
+              </div>
+            </div>
+
+            <div className="card card-compact bg-base-100 shadow-xl hover:shadow-2xl duration-150">
+              <figure style={{ marginBottom: 0, marginTop: 0 }}>
+                <img src={treemind01} alt="Prompt" className="w-full h-auto max-h-48 object-cover" />
+              </figure>
+              <div className="card-body">
+                <a target="_blank" href="https://github.com/LiuN1an/tree-mind">
+                  tree-mind
+                </a>
+                <p>
+                  tree-mind is a chrome extensions, which is used to record
+                  steps of solving a problem.
+                </p>
+              </div>
+            </div>
+
+            <div className="card card-compact bg-base-100 shadow-xl hover:shadow-2xl duration-150">
+              <figure style={{ marginBottom: 0, marginTop: 0 }}>
+                <img src={oauth01} alt="Prompt" className="w-full h-auto max-h-48 object-cover" />
+              </figure>
+              <div className="card-body">
+                <a target="_blank" href="https://github.com/LiuN1an/oauth">
+                  oauth
+                </a>
+                <p>
+                  oauth is based on nextAuth, it provide a way to customize the
+                  content of state during the process of oauth.
+                </p>
+              </div>
+            </div>
+
+            <div className="card card-compact bg-base-100 shadow-xl hover:shadow-2xl duration-150">
+              <figure style={{ marginBottom: 0, marginTop: 0 }}>
+                <img src={tool01} alt="Prompt" className="w-full h-auto max-h-48 object-cover" />
+              </figure>
+              <div className="card-body">
+                <a target="_blank" href="https://github.com/LiuN1an/oauth">
+                  Util-Tools
+                </a>
+                <p>
+                  Util-Tools is a private library which is used in common
+                  projects, it contains many small tools or examples to
+                  accelerate developing
+                </p>
+              </div>
+            </div>
+          </div>
 
           <h3></h3>
         </div>

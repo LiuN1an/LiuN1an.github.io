@@ -24,6 +24,17 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.(jpe?g|png|gif)$/i,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              publicPath: "assets",
+            },
+          },
+        ],
+      },
+      {
         test: /\.md$/,
         use: "raw-loader",
       },
