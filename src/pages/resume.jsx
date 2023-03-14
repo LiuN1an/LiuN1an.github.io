@@ -120,6 +120,13 @@ export const Resume = () => {
               </a>
               <h5 className="font-bold">Experience</h5>
             </h4>
+
+            <div className="border-dashed border-2 border-slate-300 rounded-md p-2">
+              <span className="font-bold">
+                Stack: Nextjs,Prisma,Upstash,Lambda,SNS
+              </span>
+            </div>
+
             <ul>
               <li>
                 Serverless Infra
@@ -196,6 +203,13 @@ export const Resume = () => {
           <h3 className="w-full bg-gradient-to-b from-gray-900 to-gray-600 bg-gradient-to-r text-white pl-3 rounded-tl-xl rounded-tr-xl">
             Plays🔥
           </h3>
+
+          <div className="border-dashed border-2 border-slate-300 rounded-md p-2 text-xs overflow-hidden whitespace-nowrap text-ellipsis">
+            <span className="w-full font-bold">
+              Includes: Typescript,React,Webpack,ESP32,Python,Rust,Web3
+            </span>
+          </div>
+
           <div className="grid gap-8 grid-cols-2 pt-8 max-sm:grid-cols-1">
             <div className="card card-compact bg-base-100 shadow-xl hover:shadow-2xl duration-150">
               <figure style={{ marginBottom: 0, marginTop: 0 }}>
