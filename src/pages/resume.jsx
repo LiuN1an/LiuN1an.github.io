@@ -129,7 +129,7 @@ export const Resume = () => {
                 <img src={tool01} alt="Prompt" className="w-full h-auto max-h-48 object-cover" />
               </figure>
               <div className="card-body">
-                <a target="_blank" href="https://github.com/LiuN1an/oauth">
+                <a target="_blank" href="https://github.com/LiuN1an/Util-Tools">
                   Util-Tools
                 </a>
                 <p>
