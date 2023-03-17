@@ -1,27 +1,36 @@
 import React, { useState, useEffect } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
+import { IconButton, useColorMode } from "@chakra-ui/react";
+import { FaMoon, FaSun } from "react-icons/fa";
 import { Resume } from "./pages/resume";
 
 export const App = () => {
-  const [isDark, setDark] = useState(false);
+  const { toggleColorMode, colorMode } = useColorMode();
 
   useEffect(() => {
-    if (isDark) {
-      document.documentElement.classList.add(["dark"]);
-    } else {
+    if (colorMode === "light") {
       document.documentElement.classList.remove(["dark"]);
+      document.documentElement.setAttribute("data-theme", "");
+    } else {
+      document.documentElement.classList.add(["dark"]);
+      document.documentElement.setAttribute("data-theme", "dark");
     }
-  }, [isDark]);
+  }, [colorMode]);
 
   return (
     <>
       <div
-        className="absolute right-0 top-0 p-2 bg-red z-10"
-        onClick={() => {
-          setDark((d) => !d);
-        }}
+        className="fixed right-5 top-0 p-2 bg-red z-10"
+        onClick={toggleColorMode}
       >
-        {isDark ? <>dark</> : <>light</>}
+        <IconButton
+          variant="solid"
+          aria-label="toggle theme"
+          rounded="full"
+          size="sm"
+        >
+          {colorMode === "light" ? <FaMoon /> : <FaSun />}
+        </IconButton>
       </div>
       <Routes>
         <Route path="/" element={<Navigate to="/resume" />} />
