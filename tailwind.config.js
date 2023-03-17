@@ -1,7 +1,7 @@
 module.exports = {
   purge: ["./src/**/*.jsx"],
   plugins: [require("@tailwindcss/typography"), require("daisyui")],
-  darkMode: 'class',
+  darkMode: "class",
   daisyui: {
     styled: true,
     themes: false,
@@ -10,6 +10,6 @@ module.exports = {
     logs: false,
     rtl: false,
     prefix: "",
-    // darkTheme: "dark",
+    darkTheme: "dark",
   },
 };
