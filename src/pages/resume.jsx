@@ -82,60 +82,69 @@ export const Resume = () => {
             >
               HangZhouDianZi
             </a>
-            <span className="text-sm">Master's degree, graduated in 2021</span>
+            <span className="text-sm">
+              Master's degree, graduated in 2021
+            </span>
           </p>
           <p className="text-xs">
-            Have an academic background in deep learning and neural networks,
-            and my research focuses on the combination of tensors and recurrent
-            neural networks. Published a paper in a SCI Q2 journal.
+            Have an academic background in deep learning and neural
+            networks, and my research focuses on the combination of tensors
+            and recurrent neural networks. Published a paper in a SCI Q2
+            journal.
           </p>
           <h3 className="w-full bg-gradient-to-b from-gray-900 to-gray-600 bg-gradient-to-r text-white pl-3 rounded-tl-xl rounded-tr-xl">
             Jobs💡
           </h3>
           <div className="text-sm">
             <div className="flex gap-2 items-center">
-              <h4 className="dark:text-white italic"># Crossspace</h4>
+              <h4 className="dark:text-white italic">
+                # Crossspace(remote): 05/2023 ~ 09/2023
+              </h4>
             </div>
             <div className="text-sm">
               <h5 className="font-bold">Feed Development</h5>
               <ul>
                 <li>
-                  Responsible for code refactoring and feature expansion of the
-                  feed stream, integrating Google reCAPTCHA , and developing new
-                  features in conjunction with Epic data flow management.
+                  Responsible for code refactoring and feature expansion of
+                  the feed stream, integrating Google reCAPTCHA , and
+                  developing new features in conjunction with Epic data
+                  flow management.
                 </li>
-                <li>Build infra about common modal and some components.</li>
+                <li>
+                  Build infra about common modal and some components.
+                </li>
               </ul>
             </div>
           </div>
           <div className="text-sm">
             <div className="flex gap-2 items-center">
-              <h4 className="dark:text-white italic"># ByteDance</h4>
+              <h4 className="dark:text-white italic"># ByteDance: 06/2021 ~ 05/2023</h4>
             </div>
             <div className="text-sm">
               <h5 className="font-bold">Zero Code Platform</h5>
               <ul>
                 <li>
                   As the mobile lead, I am responsible for all the mobile
-                  interactions of the components as well as the integration with
-                  the open platform.
+                  interactions of the components as well as the integration
+                  with the open platform.
                 </li>
               </ul>
               <h5 className="font-bold">Low Code Platform</h5>
               <ul>
                 <li>
-                  Have experience leading a team and have led a team of five
-                  employees in a platform-level form style redesign project.
+                  Have experience leading a team and have led a team of
+                  five employees in a platform-level form style redesign
+                  project.
                 </li>
                 <li>
                   As the architecture lead for the event engine, I am
-                  responsible for supporting the configuration of event data and
-                  runtime data flow within the platform.
+                  responsible for supporting the configuration of event
+                  data and runtime data flow within the platform.
                 </li>
                 <li>
-                  As the architecture lead for the design tool, I am responsible
-                  for the interconnection of data across multiple panels within
-                  the tool.
+                  As the architecture lead for the design tool, I am
+                  responsible for the interconnection of data across
+                  multiple panels within the tool.
                 </li>
               </ul>
             </div>
@@ -151,13 +160,16 @@ export const Resume = () => {
               <h5 className="font-bold dark:text-white">Experience</h5>
             </h4>
             <div className="border-dashed border-2 border-slate-300 rounded-md p-2">
-              <span className="font-bold">Stack: Python, Nextjs, FastAPI, Shell</span>
+              <span className="font-bold">
+                Stack: Python, Nextjs, FastAPI, Shell
+              </span>
             </div>
             <ul>
               <li>
-                Using asyncio and threads to build a system with batch execution
-                of strategies, compatibility with multidimensional parameters,
-                control of data flow rate, and control of memory consumption rate.
+                Using asyncio and threads to build a system with batch
+                execution of strategies, compatibility with
+                multidimensional parameters, control of data flow rate, and
+                control of memory consumption rate.
               </li>
             </ul>
           </div>
@@ -192,15 +204,20 @@ export const Resume = () => {
                 Achieve
                 <ul>
                   <li>
-                    At peak, 30+ new users per minute, 10000+ new users per day
+                    At peak, 30+ new users per minute, 10000+ new users per
+                    day
                   </li>
-                  <li>The maximum database connection is 300+ with pool</li>
+                  <li>
+                    The maximum database connection is 300+ with pool
+                  </li>
                 </ul>
               </blockquote>
               <li>
                 Frontend
                 <ul>
-                  <li>Infra like modal, dropdown, global state manager.</li>
+                  <li>
+                    Infra like modal, dropdown, global state manager.
+                  </li>
                   <li>All oauth ways</li>
                   <li>
                     Blocks
@@ -267,7 +284,10 @@ export const Resume = () => {
                 />
               </figure>
               <div className="card-body">
-                <a target="_blank" href="https://github.com/LiuN1an/hc-cli">
+                <a
+                  target="_blank"
+                  href="https://github.com/LiuN1an/hc-cli"
+                >
                   hc-cli
                 </a>
                 <p>
@@ -286,7 +306,10 @@ export const Resume = () => {
                 />
               </figure>
               <div className="card-body">
-                <a target="_blank" href="https://github.com/LiuN1an/tree-mind">
+                <a
+                  target="_blank"
+                  href="https://github.com/LiuN1an/tree-mind"
+                >
                   tree-mind
                 </a>
                 <p>
@@ -309,8 +332,8 @@ export const Resume = () => {
                   oauth
                 </a>
                 <p>
-                  oauth is based on nextAuth, it provide a way to customize the
-                  content of state during the process of oauth.
+                  oauth is based on nextAuth, it provide a way to customize
+                  the content of state during the process of oauth.
                 </p>
               </div>
             </div>
@@ -324,7 +347,10 @@ export const Resume = () => {
                 />
               </figure>
               <div className="card-body">
-                <a target="_blank" href="https://github.com/LiuN1an/Util-Tools">
+                <a
+                  target="_blank"
+                  href="https://github.com/LiuN1an/Util-Tools"
+                >
                   Util-Tools
                 </a>
                 <p>

@@ -99,22 +99,11 @@ export const Resume = () => {
             Q2期刊发表一篇论文。
           </p>
           <h3 className="w-full bg-gradient-to-b from-gray-900 to-gray-600 bg-gradient-to-r text-white pl-3 rounded-tl-xl rounded-tr-xl">
-            自我优势👌
-          </h3>
-          <div className="text-sm">
-            <ul>
-              <li>自我学习能力和自我驱动力很强</li>
-              <li>
-                具备技术优势，可以在熟悉工作流的前提下极大加快工作效率
-              </li>
-            </ul>
-          </div>
-          <h3 className="w-full bg-gradient-to-b from-gray-900 to-gray-600 bg-gradient-to-r text-white pl-3 rounded-tl-xl rounded-tr-xl">
             工作经历💡
           </h3>
           <div className="text-sm">
             <div className="flex gap-2 items-center">
-              <h4 className="dark:text-white italic"># Crossspace</h4>
+              <h4 className="dark:text-white italic"># Crossspace(远程): 2023/05 ~ 2023/09</h4>
             </div>
             <div className="text-sm">
               <h5 className="font-bold">Feed流前端开发负责人</h5>
@@ -129,7 +118,7 @@ export const Resume = () => {
           </div>
           <div className="text-sm">
             <div className="flex gap-2 items-center">
-              <h4 className="dark:text-white italic"># 字节跳动</h4>
+              <h4 className="dark:text-white italic"># 字节跳动: 2021/06 ~ 2023/05</h4>
             </div>
             <div className="text-sm">
               <h5 className="font-bold">零代码平台</h5>
