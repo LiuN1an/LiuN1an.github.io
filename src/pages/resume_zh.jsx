@@ -46,21 +46,24 @@ export const Resume = () => {
               href="https://github.com/LiuN1an"
               target="_blank"
               className="tooltip"
-              data-tip="github"
+              data-tip="Github"
             >
               <FaGithub className="dark:text-white" />
             </a>
-            <a
-              href="https://twitter.com/PeterLiuN1an"
-              target="_blank"
-              className="tooltip"
-              data-tip="twitter"
+            <div
+              className="tooltip hover:cursor-pointer"
+              data-tip="微信"
+              onClick={() => {
+                copyToClipboard("liun12n");
+                setTip(true);
+                setTimeout(() => setTip(false), 1000);
+              }}
             >
-              <FaTwitter className="text-blue-400" />
-            </a>
+              <FaWeixin className="text-green-500" />
+            </div>
             <div
               className="tooltip hover:cursor-pointer text-red-800"
-              data-tip="email"
+              data-tip="邮箱"
               onClick={() => {
                 copyToClipboard("liun1an2019hkw@gmail.com");
                 setTip(true);
@@ -69,16 +72,17 @@ export const Resume = () => {
             >
               <AiOutlineMail />
             </div>
-            {/* <div className="flex justify-start items-center gap-4">
-              <section className="flex justify-center items-center gap-2">
-                <FaWeixin className="dark:text-white" />
-                <span>liun12n</span>
-              </section>
-              <section className="flex justify-center items-center gap-2">
-                <FaPhone className="dark:text-white" />
-                <span>17764593120</span>
-              </section>
-            </div> */}
+            <div
+              className="tooltip hover:cursor-pointer text-red-800"
+              data-tip="电话"
+              onClick={() => {
+                copyToClipboard("17764593120");
+                setTip(true);
+                setTimeout(() => setTip(false), 1000);
+              }}
+            >
+              <FaPhone />
+            </div>
           </p>
           <h3 className="w-full bg-gradient-to-b from-gray-900 to-gray-600 bg-gradient-to-r text-white pl-3 rounded-tl-xl rounded-tr-xl">
             教育经历
@@ -103,28 +107,39 @@ export const Resume = () => {
           </h3>
           <div className="text-sm">
             <div className="flex gap-2 items-center">
-              <h4 className="dark:text-white italic"># Crossspace(远程): 2023/05 ~ 2023/09</h4>
+              <h4 className="dark:text-white italic">
+                # 东方公司证券部: 2023/05 ~ 至今
+              </h4>
             </div>
             <div className="text-sm">
-              <h5 className="font-bold">Feed流前端开发负责人</h5>
+              <h5 className="font-bold">量化平台负责人</h5>
               <ul>
                 <li>
-                  负责feed流的代码重构和功能扩展，集成Google
-                  reCAPTCHA，并结合Epic数据流管理开发新功能。
+                  负责重构和升级内部回测系统,
+                  将回测整体速度优化了十倍以上并扩展了多维度因子架构
                 </li>
-                <li>构建关于公共模态和一些组件的基础架构。</li>
+                <li>
+                  将回测,模拟盘和实盘环境统一, 真正做到一码多用,
+                  降低了90%因为策略迁移而产生的漏洞
+                </li>
+                <li>
+                  搭建数据可视化分析平台,
+                  定制数据协议和图表功能来帮助策略研发部门进行复杂分析
+                </li>
               </ul>
             </div>
           </div>
           <div className="text-sm">
             <div className="flex gap-2 items-center">
-              <h4 className="dark:text-white italic"># 字节跳动: 2021/06 ~ 2023/05</h4>
+              <h4 className="dark:text-white italic">
+                # 字节跳动: 2021/06 ~ 2023/05
+              </h4>
             </div>
             <div className="text-sm">
               <h5 className="font-bold">零代码平台</h5>
               <ul>
                 <li>
-                  作为移动端负责人，我负责所有组件的移动交互以及与开放平台的集成。
+                  作为移动端负责人，负责所有组件的移动交互以及与开放平台的集成。
                 </li>
               </ul>
               <h5 className="font-bold">低代码平台</h5>
@@ -133,10 +148,10 @@ export const Resume = () => {
                   有带领团队的经验，曾带领五人团队完成平台级表单样式底层重构项目。
                 </li>
                 <li>
-                  作为事件引擎的架构负责人，我负责支持平台内事件数据和运行时数据流的配置。
+                  作为事件引擎的架构负责人，负责支持平台内事件数据和运行时数据流的配置。
                 </li>
                 <li>
-                  作为设计器多个插件工具的负责人，我负责工具内多个面板之间的数据互连。
+                  作为设计器多个插件工具的负责人，负责工具内多个面板之间的数据互连。
                 </li>
               </ul>
             </div>
@@ -146,20 +161,33 @@ export const Resume = () => {
           </h3>
           <div className="text-sm border-b-slate-100 border-b-2">
             <h4>
-              <a target="_blank" className="dark:text-white">
-                量化回测因子实验系统
+              <a
+                href="https://app.crossspace.io/"
+                target="_blank"
+                className="dark:text-white"
+              >
+                Crossspace
               </a>
               <h5 className="font-bold dark:text-white">经历</h5>
             </h4>
             <div className="border-dashed border-2 border-slate-300 rounded-md p-2">
               <span className="font-bold">
-                技术栈: Python, Nextjs, FastAPI, Shell
+                技术栈: Nextjs, Rxjs, Ant-Design
               </span>
             </div>
             <ul>
               <li>
-                使用asyncio和threads构建了一个支持批量策略执行，多维度参数调参，数据流流速控制以及内存增长控制的系统
+                Feed流的代码重构和功能扩展，集成Google
+                reCAPTCHA，并结合Epic数据流管理开发新功能。
               </li>
+
+              <blockquote className="font-bold">
+                成就
+                <ul>
+                  <li>统一Feed中后续可能出现的多模态内容而进行了架构扩展</li>
+                </ul>
+              </blockquote>
+              <li>构建关于公共模态和一些组件的基础架构。</li>
             </ul>
           </div>
           <div className="text-sm border-b-slate-100 border-b-2">
@@ -192,29 +220,36 @@ export const Resume = () => {
               <blockquote className="font-bold">
                 成就
                 <ul>
-                  <li>在高峰期，每分钟30+新用户，每天10000+新用户</li>
-                  <li>池的最大数据库连接数是300+</li>
+                  <li>
+                    通过配置,
+                    保障了高峰期每分钟30+新用户，每天10000+新用户的频繁访问
+                  </li>
                 </ul>
               </blockquote>
               <li>
+                后端
+                <ul>
+                  <li>数据接口开发, 对接Prisma和MongoDB</li>
+                  <li>基于亚马逊队列实现URL首屏截屏</li>
+                </ul>
+              </li>
+              <li>
                 前端
                 <ul>
-                  <li>基础设施，如模态，下拉，全局状态管理器。</li>
-                  <li>Oauth鉴权集成</li>
                   <li>
-                    前端开发基础功能
-                    <ul>
-                      <li>Card模块的URL自动截屏</li>
-                      <li>可复用的公共模态框</li>
-                      <li>Twitter&Discord的验证</li>
-                      <li>进度条记录组件</li>
-                    </ul>
-                    <img
-                      src={tasks01}
-                      alt="task"
-                      className="border-2 border-slate-300 rounded-xl border-solid dark:border-slate-600"
-                    />
+                    基础设施，如模态，下拉，全局状态管理器以及一些用户友好功能。
                   </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      href="https://github.com/LiuN1an/oauth"
+                      className="dark:text-white"
+                    >
+                      Oauth鉴权集成
+                    </a>
+                    (已封装成库)
+                  </li>
+                  <li>对接Twitter&Discord开发者接口进行自定义验证</li>
                 </ul>
               </li>
             </ul>
@@ -242,7 +277,7 @@ export const Resume = () => {
 
           <div className="border-dashed border-2 border-slate-300 rounded-md p-2 text-xs overflow-hidden whitespace-nowrap text-ellipsis">
             <span className="w-full font-bold">
-              技术栈涵盖: Typescript,React,Webpack,ESP32,Python,Rust,Web3
+              技术栈涵盖: Typescript,React,Webpack,ESP32,Python,Rust,Web3,Taro
             </span>
           </div>
 
@@ -256,10 +291,7 @@ export const Resume = () => {
                 />
               </figure>
               <div className="card-body">
-                <a
-                  target="_blank"
-                  href="https://github.com/LiuN1an/hc-cli"
-                >
+                <a target="_blank" href="https://github.com/LiuN1an/hc-cli">
                   hc-cli
                 </a>
                 <p>
@@ -277,10 +309,7 @@ export const Resume = () => {
                 />
               </figure>
               <div className="card-body">
-                <a
-                  target="_blank"
-                  href="https://github.com/LiuN1an/tree-mind"
-                >
+                <a target="_blank" href="https://github.com/LiuN1an/tree-mind">
                   tree-mind
                 </a>
                 <p>tree-mind是一个浏览器插件，可以用记录解决问题的步骤</p>
@@ -314,10 +343,7 @@ export const Resume = () => {
                 />
               </figure>
               <div className="card-body">
-                <a
-                  target="_blank"
-                  href="https://github.com/LiuN1an/Util-Tools"
-                >
+                <a target="_blank" href="https://github.com/LiuN1an/Util-Tools">
                   Util-Tools
                 </a>
                 <p>
@@ -367,7 +393,7 @@ export const Resume = () => {
               d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
             />
           </svg>
-          <span className="text-xs">Your have Copy it!</span>
+          <span className="text-xs">已经复制到您的粘贴板上</span>
         </div>
       </div>
     </div>
