@@ -38,11 +38,15 @@ export const Resume = () => {
 
   return (
     <div className="transition-all duration-300 min-h-screen bg-gray-50 py-8 flex flex-col relative overflow-hidden dark:bg-[#231815] dark:text-white">
-      <div className="relative w-full py-12 px-6 shadow-xl shadow-slate-700/10 ring-1 ring-gray-900/5 md:max-w-3xl md:mx-auto lg:max-w-4xl lg:pb-28 dark:bg-gray-900 dark:text-white">
-        <div className="prose mx-auto lg:prose-lg  dark:text-white prose-ul:dark:text-white prose-headings:dark:text-white prose-a:dark:text-white prose-blockquote:dark:text-white dark:marker:text-white prose-h3:dark:bg-gradient-to-r prose-h3:dark:from-gray-100 prose-h3:dark:to-slate-700 prose-h3:dark:text-black">
+      <div
+        className="relative w-full py-12 px-6 shadow-xl shadow-slate-700/10 ring-1 ring-gray-900/5 md:max-w-3xl md:mx-auto lg:max-w-4xl lg:pb-28 dark:bg-gray-900 dark:text-white"
+        id="save_to_pdf_id_en"
+      >
+        <div className="prose mx-auto lg:prose-lg  dark:text-white prose-ul:dark:text-white prose-headings:dark:text-white prose-a:dark:text-white prose-blockquote:dark:text-white dark:marker:text-white prose-h3:dark:bg-gradient-to-r prose-h3:dark:from-gray-100 prose-h3:dark:to-slate-700 prose-h3:dark:text-black prose-h3:mt-1 prose-h4:mt-1">
           <h2>Liunian</h2>
           <p className="flex gap-6">
             <a
+              data-pdf-link
               href="https://github.com/LiuN1an"
               target="_blank"
               className="tooltip"
@@ -89,6 +93,7 @@ export const Resume = () => {
           </h3>
           <p className="flex justify-between items-center max-sm:flex-col max-sm:gap-2">
             <a
+              data-pdf-link
               href="https://www.163.com/dy/article/HKOS8HOG0552TYXN.html"
               target="_blank"
               className="tooltip"
@@ -138,6 +143,7 @@ export const Resume = () => {
                 </li>
                 <li>
                   <a
+                    data-pdf-link
                     href="https://github.com/LiuN1an/SH-Quant"
                     target="__blank"
                   >
@@ -181,6 +187,14 @@ export const Resume = () => {
                   for the interconnection of data across multiple panels within
                   the tool.
                 </li>
+                <li>
+                  <a
+                    target="__blank"
+                    href="https://github.com/LiuN1an/Util-Tools/tree/main/src/Form"
+                  >
+                    The Core of Form Engine
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
@@ -190,6 +204,7 @@ export const Resume = () => {
           <div className="text-sm border-b-slate-100 border-b-2">
             <h4>
               <a
+                data-pdf-link
                 href="https://app.crossspace.io/"
                 target="_blank"
                 className="dark:text-white"
@@ -212,6 +227,7 @@ export const Resume = () => {
           <div className="text-sm border-b-slate-100 border-b-2">
             <h4>
               <a
+                data-pdf-link
                 href="https://nextme.one"
                 target="_blank"
                 className="dark:text-white"
@@ -370,9 +386,9 @@ export const Resume = () => {
                   Util-Tools
                 </a>
                 <p>
-                  Util-Tools is a private library which is used in common
-                  projects, it contains many small tools or examples to
-                  accelerate developing
+                  This is a toolkit that encapsulates my past programming
+                  experience. Any components or patterns that require thoughtful
+                  design will be documented here for future reference.
                 </p>
               </div>
             </div>
@@ -385,6 +401,7 @@ export const Resume = () => {
               </figure>
               <div className="card-body">
                 <a
+                  data-pdf-link
                   target="_blank"
                   href="https://glidkz06tv.feishu.cn/docs/doccnDHmn13Jg9Si6hG8IseVrkg"
                 >
