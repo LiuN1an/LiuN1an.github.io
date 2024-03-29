@@ -112,6 +112,11 @@ export const Resume = () => {
                 # Oriental Securities Department: 05/2023 ~ now
               </h4>
             </div>
+            <div className="border-dashed border-2 border-slate-300 rounded-md p-2 text-sm mb-2">
+              <span className="font-bold">
+                Stack: Nextjs, Mobx, Tailwind, Highchart, Lightchart, Python
+              </span>
+            </div>
             <div className="text-sm">
               <h5 className="font-bold">Quantization platform leader</h5>
               <ul>
@@ -131,6 +136,14 @@ export const Resume = () => {
                   protocols and charting capabilities to help strategy research
                   and development perform complex analysis
                 </li>
+                <li>
+                  <a
+                    href="https://github.com/LiuN1an/SH-Quant"
+                    target="__blank"
+                  >
+                    Open Source with Python Simple Core
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
@@ -140,11 +153,14 @@ export const Resume = () => {
                 # ByteDance: 06/2021 ~ 05/2023
               </h4>
             </div>
+            <div className="border-dashed border-2 border-slate-300 rounded-md p-2 text-sm mb-2">
+              <span className="font-bold">Stack: React, Mobx, Webpack, H5</span>
+            </div>
             <div className="text-sm">
               <h5 className="font-bold">Zero Code Platform</h5>
               <ul>
                 <li>
-                  As the mobile lead, I am responsible for all the mobile
+                  As the mobile H5 lead, I am responsible for all the mobile
                   interactions of the components as well as the integration with
                   the open platform.
                 </li>
@@ -183,9 +199,7 @@ export const Resume = () => {
               <h5 className="font-bold dark:text-white">Experience</h5>
             </h4>
             <div className="border-dashed border-2 border-slate-300 rounded-md p-2">
-              <span className="font-bold">
-                技术栈: Nextjs, Rxjs, Ant-Design
-              </span>
+              <span className="font-bold">Stack: Nextjs, Rxjs, Ant-Design</span>
             </div>
             <ul>
               <li>

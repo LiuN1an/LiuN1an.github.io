@@ -111,6 +111,11 @@ export const Resume = () => {
                 # 东方公司证券部: 2023/05 ~ 至今
               </h4>
             </div>
+            <div className="border-dashed border-2 border-slate-300 rounded-md p-2 text-sm mb-2">
+              <span className="font-bold">
+                技术栈: Nextjs, Mobx, Tailwind, Highchart, Lightchart, Python
+              </span>
+            </div>
             <div className="text-sm">
               <h5 className="font-bold">量化平台负责人</h5>
               <ul>
@@ -126,6 +131,14 @@ export const Resume = () => {
                   搭建数据可视化分析平台,
                   定制数据协议和图表功能来帮助策略研发部门进行复杂分析
                 </li>
+                <li>
+                  <a
+                    href="https://github.com/LiuN1an/SH-Quant"
+                    target="__blank"
+                  >
+                    开源的Python简易内核
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
@@ -135,11 +148,16 @@ export const Resume = () => {
                 # 字节跳动: 2021/06 ~ 2023/05
               </h4>
             </div>
+            <div className="border-dashed border-2 border-slate-300 rounded-md p-2 text-sm mb-2">
+              <span className="font-bold">
+                技术栈: React, Mobx, Webpack, H5
+              </span>
+            </div>
             <div className="text-sm">
               <h5 className="font-bold">零代码平台</h5>
               <ul>
                 <li>
-                  作为移动端负责人，负责所有组件的移动交互以及与开放平台的集成。
+                  作为移动端h5负责人，负责所有组件的移动交互以及与开放平台的集成。
                 </li>
               </ul>
               <h5 className="font-bold">低代码平台</h5>
