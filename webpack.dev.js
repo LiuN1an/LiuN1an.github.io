@@ -13,7 +13,7 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     filename: "[name].bundle.js",
   },
-  devtool: false,
+  devtool: "source-map",
   resolve: {
     extensions: ["*", ".ts", ".tsx", ".jsx", ".js", ".json", "svg"],
   },
