@@ -91,20 +91,6 @@ export const Resume = () => {
                 <FaPhone />
               </div>
             </p>
-            <p className="hidden gap-6 " id="person_contact_zh">
-              <span className="flex gap-2 items-center">
-                <FaGithub className="dark:text-white" />
-                <span>https://github.com/LiuN1an</span>
-              </span>
-              <span className="flex gap-2 items-center">
-                <FaWeixin className="text-green-500" />
-                <span>liun12n</span>
-              </span>
-              <span className="flex gap-2 items-center">
-                <FaPhone />
-                <span>+86 17764593120</span>
-              </span>
-            </p>
             <h3 className="w-full bg-gradient-to-b from-gray-900 to-gray-600 bg-gradient-to-r text-white pl-3 rounded-tl-xl rounded-tr-xl">
               教育经历🏫
             </h3>
@@ -426,6 +412,21 @@ export const Resume = () => {
               </div>
             </div>
           </div>
+
+          <p className="hidden gap-3 flex-col" id="person_contact_zh">
+            <span className="flex gap-2 items-center">
+              <FaGithub className="dark:text-white" />
+              <span>https://github.com/LiuN1an</span>
+            </span>
+            <span className="flex gap-2 items-center">
+              <FaWeixin className="text-green-500" />
+              <span>liun12n</span>
+            </span>
+            <span className="flex gap-2 items-center">
+              <FaPhone />
+              <span>+86 17764593120</span>
+            </span>
+          </p>
 
           <div
             className="hidden justify-center items-center flex-col mt-3 text-xs text-gray-600 gap-2 dark:text-white"
