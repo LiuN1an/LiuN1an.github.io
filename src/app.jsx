@@ -9,8 +9,9 @@ import {
 } from "react-router-dom";
 import { IconButton, useColorMode, useMediaQuery } from "@chakra-ui/react";
 import { FaMoon, FaSun, FaFileExport } from "react-icons/fa";
-import { Resume } from "./pages/resume";
-import { Resume as ResumeZh } from "./pages/resume_zh";
+// import { Resume } from "./pages/resume";
+// import { Resume as ResumeZh } from "./pages/resume_zh";
+import { Resume as ResumeZh } from "./pages/yunying";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
 
@@ -94,9 +95,9 @@ export const App = () => {
           size="lg"
           onClick={() => {
             if (window.location.hash.endsWith("zh")) {
-              navigate("/resume");
+              navigate("/main_zh");
             } else {
-              navigate("/resume_zh");
+              navigate("/main_zh");
             }
           }}
         >
@@ -126,9 +127,11 @@ export const App = () => {
         </IconButton>
       </div>
       <Routes>
-        <Route path="/" element={<Navigate to="/resume" />} />
+        <Route path="/" element={<Navigate to="/main_zh" />} />
+        {/* <Route path="/" element={<Navigate to="/resume" />} />
         <Route path="/resume" element={<Resume />} />
-        <Route path="/resume_zh" element={<ResumeZh />} />
+        <Route path="/resume_zh" element={<ResumeZh />} /> */}
+        <Route path="/main_zh" element={<ResumeZh />} />
       </Routes>
     </>
   );
