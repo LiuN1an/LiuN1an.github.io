@@ -127,11 +127,11 @@ export const App = () => {
         </IconButton>
       </div>
       <Routes>
-        <Route path="/" element={<Navigate to="/main_zh" />} />
-        {/* <Route path="/" element={<Navigate to="/resume" />} />
+        {/* <Route path="/" element={<Navigate to="/main_zh" />} /> */}
+        <Route path="/" element={<Navigate to="/resume" />} />
         <Route path="/resume" element={<Resume />} />
-        <Route path="/resume_zh" element={<ResumeZh />} /> */}
-        <Route path="/main_zh" element={<ResumeZh />} />
+        <Route path="/resume_zh" element={<ResumeZh />} />
+        {/* <Route path="/main_zh" element={<ResumeZh />} /> */}
       </Routes>
     </>
   );
